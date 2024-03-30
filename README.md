@@ -1,6 +1,6 @@
 # Template App (bloc)
 
-[en] This project provides an application template using the bloc state management method with Flutter.
+This project provides an application template using the bloc state management method with Flutter.
 
 ## Getting Started
 
