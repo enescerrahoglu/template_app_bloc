@@ -6,7 +6,7 @@ class TitleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      "ToDo App",
+      "Template App",
       style: TextStyle(
         fontSize: 24,
         fontWeight: FontWeight.bold,
