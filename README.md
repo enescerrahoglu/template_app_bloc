@@ -1,7 +1,6 @@
 # Template App with [flutter_bloc](https://pub.dev/packages/flutter_bloc)
 
-🇺🇸 This project provides an application template using the bloc state management method with Flutter. The project includes user CRUD (Create, Read, Update, Delete) operations and authentication, serving as a realistic example for real-world scenarios.\
-🇹🇷 Bu proje, Flutter ile bloc state management yöntemini kullanarak bir uygulama şablonu sağlar. Proje, kullanıcı CRUD (Create, Read, Update, Delete) işlemleri ve kimlik doğrulama işlemlerini içerir ve gerçek dünya senaryolarına uygun bir örnek sunar.
+🇺🇸 This project provides an application template using the bloc state management method with Flutter. The project includes user CRUD (Create, Read, Update, Delete) operations and authentication, serving as a realistic example for real-world scenarios.
 
 ## Getting Started
 
