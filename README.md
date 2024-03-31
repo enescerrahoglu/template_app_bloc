@@ -4,10 +4,10 @@ This repo provides an application template using the bloc state management metho
 
 ## Getting Started
 
-### API integration
-### Firebase integration
-### Firebase Trigger Email Extension integration
-### Firebase Cloud Functions integration
+#### API integration
+#### Firebase integration
+#### Firebase Trigger Email Extension integration
+#### Firebase Cloud Functions integration
 
 ## Screenshoots
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/0c261807-6554-4296-83ba-ca2007fd81e1" height="500">
