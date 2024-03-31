@@ -10,7 +10,7 @@ This repo provides an application template using the bloc state management metho
 #### Firebase Cloud Functions integration
 
 ## Screenshoots
-[info] Hover the mouse over the images for explanations.
+#### [info] Hover the mouse over the images for explanations.
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/0c261807-6554-4296-83ba-ca2007fd81e1" title="Login Screen" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/f2ca64dd-1c0e-4cab-917b-10422d5152ad" title="Forgot Password Screen" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/c9b5879d-d167-47d1-aee2-c2ea1b04e828" title="Register Screen" height="500">
