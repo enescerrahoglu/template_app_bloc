@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:template_app_bloc/constants/image_constants.dart';
+import 'package:template_app_bloc/helpers/ui_helper.dart';
 
 class BackgroundWidget extends StatelessWidget {
   const BackgroundWidget({super.key});
@@ -11,10 +11,10 @@ class BackgroundWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Image.asset(
-            ImageConstants.loginBackground,
-            fit: BoxFit.cover,
-          ),
+          SizedBox(
+            width: UIHelper.deviceWidth,
+            height: UIHelper.deviceHeight,
+          )
         ],
       ),
     );
