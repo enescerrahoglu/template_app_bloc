@@ -5,10 +5,17 @@
 
 ## Getting Started
 
-#### API integration
-#### Firebase integration
-#### Firebase Trigger Email Extension integration
-#### Firebase Cloud Functions integration
+#### API Integration
+A Rest API is used for user operations, and the API code is not included in this repository. You can develop API endpoints according to the UserModel class in the project to make it suitable for use. You need to update the BASE_URL value in the '.env' file content to match your API structure. You can find the naming used for CRUD and authentication endpoints in the UserService class, and you may need to revise it according to your API structure.
+
+#### Firebase Integration
+The project uses Storage for uploading images and accessing them via URL, Extensions for email infrastructure, Firestore Database, and Functions for triggering email sending. Therefore, you will need a Firebase project. Since the firebase_options.dart file is not included in the Template App project content, it will throw an error when you clone the repo. Perform Firebase integration to add this file to the project.
+
+#### Firebase Trigger Email Extension Integration
+For email verification, a verification code is sent to the email address provided by the user. The Firebase Trigger Email extension is used for email infrastructure. You need to activate this extension via the Firebase console. Besides verification code sending, the email infrastructure is used for different scenarios as well. Email sending is triggered by Firebase Cloud Functions.
+
+#### Firebase Cloud Functions Integration
+The project already includes the functions folder and firebase.json file for integrating with Cloud Functions. When integrating cloud functions, if you specify to overwrite the functions/index.js file, you will remove the cloud functions in the file needed for email infrastructure. You can proceed with the "No" option for overwriting, or if overwritten, you can copy the functions from the relevant file in my Github repo and deploy them again.
 
 ## Screenshoots
 ###### [info] Hover the mouse over the images for explanations.
