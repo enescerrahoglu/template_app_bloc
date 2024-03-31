@@ -18,6 +18,5 @@ This repo provides an application template using the bloc state management metho
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/681425e4-9848-4892-9b4a-eeac1a9f1b44" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/74a98cd5-9317-4889-b168-6d4be3086ce6" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/4f0c7aed-be1e-4239-9893-6b8632367544" height="500">
-<img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/40b2e5e8-84c4-424f-a94f-67bc9ad8d599" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/dd0145be-f13c-4043-a096-5d63132750a9" height="500">
-
+<img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/40b2e5e8-84c4-424f-a94f-67bc9ad8d599" height="500">
