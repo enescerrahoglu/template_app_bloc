@@ -1,9 +1,7 @@
 # Template App with [flutter_bloc](https://pub.dev/packages/flutter_bloc)
 
-##### [🇺🇸] This project provides an application template using the bloc state management method with Flutter. The project includes user CRUD (Create, Read, Update, Delete) operations and authentication, serving as a realistic example for real-world scenarios.
-In order to prove that native-looking applications can be developed with Flutter if desired, Cupertino widgets were preferred instead of Material widgets in the user interface of the project.
-##### [🇹🇷] Bu proje, Flutter ile bloc state management yöntemini kullanarak bir uygulama şablonu sağlar. Proje, kullanıcı CRUD (Create, Read, Update, Delete) işlemleri ve kimlik doğrulama işlemlerini içerir ve gerçek dünya senaryolarına uygun bir örnek sunar.
-Flutter ile istenirse native görünümlü uygulamalar geliştirilebileceğini kanıtlamak amacıyla projenin kullanıcı arayüzünde Material widget'ları yerine Cupertino widget'ları tercih edildi.
+##### [🇺🇸] This project provides an application template using the bloc state management method with Flutter. The project includes user CRUD (Create, Read, Update, Delete) operations and authentication, serving as a realistic example for real-world scenarios. In order to prove that native-looking applications can be developed with Flutter if desired, Cupertino widgets were preferred instead of Material widgets in the user interface of the project.
+##### [🇹🇷] Bu proje, Flutter ile bloc state management yöntemini kullanarak bir uygulama şablonu sağlar. Proje, kullanıcı CRUD (Create, Read, Update, Delete) işlemleri ve kimlik doğrulama işlemlerini içerir ve gerçek dünya senaryolarına uygun bir örnek sunar. Flutter ile istenirse native görünümlü uygulamalar geliştirilebileceğini kanıtlamak amacıyla projenin kullanıcı arayüzünde Material widget'ları yerine Cupertino widget'ları tercih edildi.
 
 ![TEMPLATE_APP](https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/b72115af-4da1-419b-be6a-e85ba7788c70)
 
