@@ -1,10 +1,10 @@
 class HttpResponseModel<T> {
-  int statusCode;
+  int? statusCode;
   T? data;
   String? message;
 
   HttpResponseModel({
-    required this.statusCode,
+    this.statusCode,
     this.data,
     this.message,
   });

@@ -29,8 +29,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
@@ -55,8 +53,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
@@ -75,8 +71,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
@@ -101,8 +95,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
@@ -115,7 +107,6 @@ class UserService extends UserInterface {
       var response = await http.put(
         url,
         body: jsonEncode({
-          // 'password': userModel.password,
           'first_name': userModel.firstName,
           'last_name': userModel.lastName,
           'profile_photo': userModel.profilePhoto,
@@ -131,8 +122,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
@@ -158,8 +147,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
@@ -201,8 +188,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
@@ -226,8 +211,6 @@ class UserService extends UserInterface {
       );
     } catch (e) {
       return HttpResponseModel(
-        statusCode: 500,
-        data: null,
         message: 'An error occurred: $e',
       );
     }
