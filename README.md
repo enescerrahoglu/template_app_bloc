@@ -1,26 +1,34 @@
 # Template App with [flutter_bloc](https://pub.dev/packages/flutter_bloc)
 
-This project provides an application template using the bloc state management method with Flutter. The project includes user CRUD (Create, Read, Update, Delete) operations and authentication, serving as a realistic example for real-world scenarios.\
+🇺🇸 This project provides an application template using the bloc state management method with Flutter. The project includes user CRUD (Create, Read, Update, Delete) operations and authentication, serving as a realistic example for real-world scenarios.\
 In order to prove that native-looking applications can be developed with Flutter if desired, Cupertino widgets were preferred instead of Material widgets in the user interface of the project.
+🇹🇷 Bu proje, Flutter ile bloc state management yöntemini kullanarak bir uygulama şablonu sağlar. Proje, kullanıcı CRUD (Create, Read, Update, Delete) işlemleri ve kimlik doğrulama işlemlerini içerir ve gerçek dünya senaryolarına uygun bir örnek sunar.\
+
+Flutter ile istenirse native görünümlü uygulamalar geliştirilebileceğini kanıtlamak amacıyla projenin kullanıcı arayüzünde Material widget'ları yerine Cupertino widget'ları tercih edildi.
 
 ![TEMPLATE_APP](https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/b72115af-4da1-419b-be6a-e85ba7788c70)
 
 ## Getting Started
 
 #### API Integration
-A Rest API is used for user operations, and the API code is not included in this repository. You can develop API endpoints according to the UserModel class in the project to make it suitable for use. You need to update the BASE_URL value in the '.env' file content to match your API structure. You can find the naming used for CRUD and authentication endpoints in the UserService class, and you may need to revise it according to your API structure.
+🇺🇸 A Rest API is used for user operations, and the API code is not included in this repository. You can develop API endpoints according to the UserModel class in the project to make it suitable for use. You need to update the BASE_URL value in the '.env' file content to match your API structure. You can find the naming used for CRUD and authentication endpoints in the UserService class, and you may need to revise it according to your API structure.
+🇹🇷 Kullanıcı işlemleri için Rest API kullanılmıştır ve API kodları bu repoya dahil değildir. Projedeki UserModel sınıfına uygun API endpointlerini geliştirerek kullanıma uygun hale getirebilirsiniz. Oluşturacağınız API'nin BASE_URL değerini '.env' dosyası içeriğinde güncellemeniz gerekmektedir. UserService sınıfında CRUD ve kimlik doğrulama endpointleri için kullanılan isimlendirmeleri bulabilir ve kendi API yapınıza göre revize etmeniz gerekebilir.
 
 #### Firebase Integration
-The project uses Storage for uploading images and accessing them via URL, Extensions and Firestore Database for email infrastructure and Functions for triggering email sending. Therefore, you will need a Firebase project. Since the firebase_options.dart file is not included in the Template App project content, it will throw an error when you clone the repo. Perform Firebase integration to add this file to the project.
+🇺🇸 The project uses Storage for uploading images and accessing them via URL, Extensions and Firestore Database for email infrastructure and Functions for triggering email sending. Therefore, you will need a Firebase project. Since the firebase_options.dart file is not included in the Template App project content, it will throw an error when you clone the repo. Perform Firebase integration to add this file to the project.
+🇹🇷 Projede görselleri yüklemek ve görsellere URL değerleri ile erişmek için Storage, e-posta altyapısı için Extensions ve Firestore Database, e-posta gönderimini tetiklemek için Functions servisleri kullanılmaktadır. Bu nedenle, Firebase projesine ihtiyacınız olacaktır. Template App proje içeriğinde firebase_options.dart dosyası mevcut olmadığından repoyu cloneladığınızda hata verecektir. Firebase entegrasyonunu gerçekleştirerek bu dosyanın projeye eklenmesini sağlayın.
 
 #### Firebase Trigger Email Extension Integration
-For email verification, a verification code is sent to the email address provided by the user. The Firebase Trigger Email extension is used for email infrastructure. You need to activate this extension via the Firebase console. Besides verification code sending, the email infrastructure is used for different scenarios as well. Email sending is triggered by Firebase Cloud Functions.
+🇺🇸 For email verification, a verification code is sent to the email address provided by the user. The Firebase Trigger Email extension is used for email infrastructure. You need to activate this extension via the Firebase console. Besides verification code sending, the email infrastructure is used for different scenarios as well. Email sending is triggered by Firebase Cloud Functions.
+🇹🇷 Projede e-posta adresi doğrulaması için kullanıcının girdiği e-posta adresine doğrulama kodu iletilmektedir. E-posta altyapısı için Firebase'in sunduğu Trigger Email eklentisi kullanılmıştır. Bu eklentiyi Firebase konsolu üzerinden aktifleştirmeniz gerekir. Doğrulama kodu gönderimi dışında farklı senaryolar için de e-posta altyapısı kullanılmaktadır. E-posta gönderimi Firebase Cloud Functions ile tetiklenmektedir.
 
 #### Firebase Cloud Functions Integration
-The project already includes the functions folder and firebase.json file for integrating with Cloud Functions. When integrating cloud functions, if you specify to overwrite the functions/index.js file, you will remove the cloud functions in the file needed for email infrastructure. You can proceed with the "No" option for overwriting, or if overwritten, you can copy the functions from the relevant file in my Github repo and deploy them again.
+🇺🇸 The project already includes the functions folder and firebase.json file to be added with Cloud Functions. If you specify that the functions/index.js file should be overwritten while integrating cloud functions, you will delete the cloud functions that you need to deploy for the email infrastructure from the file. You can skip the overwrite step with the "No" option, or if it is overwritten, you can copy and deploy the functions again from the relevant file in this Github repo.
+🇹🇷 Projede, Cloud Functions ile eklenecek olan functions klasörü ve firebase.json dosyası zaten mevcut, cloud functions'ı entegre ederken functions/index.js dosyasının overwrite olmasını belirtirseniz email altyapısı için deploy etmeniz gereken cloud fonksiyonlarını dosyadan silmiş olursunuz. Overwrite adımını "No" seçeneği ile geçebilirsiniz ya da üzerine yazılırsa, bu Github reposundaki ilgili dosyadan fonksiyonları tekrar kopyalayıp deploy edebilirsiniz.
 
 ## Screenshoots
-###### [info] Hover the mouse over the images for explanations.
+###### [🇺🇸] Hover the mouse cursor over the images for explanations.
+###### [🇹🇷] Açıklamalar için mouse imlecini resimlerin üzerinde bekletin.
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/0c261807-6554-4296-83ba-ca2007fd81e1" title="Login Screen" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/f2ca64dd-1c0e-4cab-917b-10422d5152ad" title="Forgot Password Screen" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/c9b5879d-d167-47d1-aee2-c2ea1b04e828" title="Register Screen" height="500">
