@@ -40,3 +40,10 @@
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/4f0c7aed-be1e-4239-9893-6b8632367544" title="Settings Screen" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/dd0145be-f13c-4043-a096-5d63132750a9" title="Change app theme" height="500">
 <img src="https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/40b2e5e8-84c4-424f-a94f-67bc9ad8d599" title="Change app language" height="500">
+
+#
+## Problems you may encounter
+#
+<p>[🇺🇸] To prevent [...lowerCamelCase identifier] problems caused by the easy_localization package, it will be sufficient to add the [constant_identifier_names: false] definition under the [rules:] statement in the analysis_options.yaml file in the project directory.</p>
+<p>[🇹🇷] easy_localization paketinden kaynaklı olarak [...lowerCamelCase identifier] problemlerini engellemek için proje dizininde yer alan analysis_options.yaml dosyasında [rules:] ifadesinin altına [constant_identifier_names: false] tanımlamasını eklemeniz yeterli olacaktır.</p>
+![problem_1](https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/3e701034-5963-4469-8c03-086af81a736c)
