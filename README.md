@@ -26,6 +26,7 @@
 ##### [🇺🇸] The project already includes the functions folder and firebase.json file to be added with Cloud Functions. If you specify that the functions/index.js file should be overwritten while integrating cloud functions, you will delete the cloud functions that you need to deploy for the email infrastructure from the file. You can skip the overwrite step with the "No" option, or if it is overwritten, you can copy and deploy the functions again from the relevant file in this Github repo.
 ##### [🇹🇷] Projede, Cloud Functions ile eklenecek olan functions klasörü ve firebase.json dosyası zaten mevcut, cloud functions'ı entegre ederken functions/index.js dosyasının overwrite olmasını belirtirseniz email altyapısı için deploy etmeniz gereken cloud fonksiyonlarını dosyadan silmiş olursunuz. Overwrite adımını "No" seçeneği ile geçebilirsiniz ya da üzerine yazılırsa, bu Github reposundaki ilgili dosyadan fonksiyonları tekrar kopyalayıp deploy edebilirsiniz.
 
+#
 ## Screenshoots
 ###### [🇺🇸] Hover the mouse cursor over the images for explanations.
 ###### [🇹🇷] Açıklamalar için mouse imlecini resimlerin üzerinde bekletin.
