@@ -46,4 +46,5 @@
 #
 <p>[🇺🇸] To prevent [...lowerCamelCase identifier] problems caused by the easy_localization package, it will be sufficient to add the [constant_identifier_names: false] definition under the [rules:] statement in the analysis_options.yaml file in the project directory.</p>
 <p>[🇹🇷] easy_localization paketinden kaynaklı olarak [...lowerCamelCase identifier] problemlerini engellemek için proje dizininde yer alan analysis_options.yaml dosyasında [rules:] ifadesinin altına [constant_identifier_names: false] tanımlamasını eklemeniz yeterli olacaktır.</p>
+
 ![problem_1](https://github.com/enescerrahoglu/template_app_bloc/assets/76053138/3e701034-5963-4469-8c03-086af81a736c)
