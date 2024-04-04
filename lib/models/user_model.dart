@@ -28,12 +28,12 @@ class UserModel {
       'id': id,
       'email': email,
       'password': password,
-      'firstName': firstName,
-      'lastName': lastName,
-      'profilePhoto': profilePhoto,
-      'dateOfBirth': dateOfBirth.millisecondsSinceEpoch,
+      'first_name': firstName,
+      'last_name': lastName,
+      'profile_photo': profilePhoto,
+      'date_of_birth': dateOfBirth.toIso8601String(),
       'gender': gender,
-      'joinDate': joinDate.millisecondsSinceEpoch,
+      'join_date': joinDate.toIso8601String(),
     };
   }
 
