@@ -53,6 +53,7 @@ dependencies:
   path_provider: ^2.1.2
   gal: ^2.3.0
   pull_down_button: ^0.9.3
+  go_router: ^14.1.3
 
 dev_dependencies:
   flutter_test:
