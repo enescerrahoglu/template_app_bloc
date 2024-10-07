@@ -1,14 +1,13 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:template_app_bloc/core/interfaces/user_interface.dart';
 import 'package:template_app_bloc/core/models/http_response_model.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:template_app_bloc/core/services/shared_preferences_service.dart';
 import 'package:template_app_bloc/features/profile/model/user_model.dart';
 
 class UserService extends UserInterface {
   final String _baseUrl = dotenv.env['BASE_URL'] ?? "";
-  final String _authTokenKey = dotenv.env['AUTH_TOKEN_KEY'] ?? "";
 
   @override
   Future<HttpResponseModel> login({required String email, required String password}) async {
@@ -153,20 +152,15 @@ class UserService extends UserInterface {
   }
 
   Future<void> saveAuthTokenToSP(String authToken) async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    if (_authTokenKey.isNotEmpty) {
-      await prefs.setString(_authTokenKey, authToken);
-    }
+    await SharedPreferencesService.instance.setData(PreferenceKey.authToken, authToken);
   }
 
   Future<String?> getAuthTokenFromSP() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    return prefs.getString(_authTokenKey);
+    return SharedPreferencesService.instance.getData(PreferenceKey.authToken);
   }
 
   Future<void> deleteAuthTokenFromSP() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_authTokenKey);
+    await SharedPreferencesService.instance.removeData(PreferenceKey.authToken);
   }
 
   @override

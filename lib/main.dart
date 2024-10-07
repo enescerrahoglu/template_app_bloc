@@ -3,6 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:template_app_bloc/core/services/shared_preferences_service.dart';
 import 'package:template_app_bloc/core/utils/bloc/custom_multi_bloc_provider.dart';
 import 'package:template_app_bloc/core/utils/localization/localization_manager.dart';
 import 'package:template_app_bloc/core/utils/router/router_manager.dart';
@@ -14,9 +15,10 @@ import 'package:template_app_bloc/core/services/theme_service.dart';
 
 void main() async {
   await dotenv.load();
-  await ThemeService.getTheme();
+  await SharedPreferencesService.instance.init();
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
+  ThemeService.getTheme();
   // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(

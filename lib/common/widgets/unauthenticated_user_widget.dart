@@ -7,6 +7,10 @@ class UnauthenticatedUserWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: const Text(LocaleKeys.unauthenticated_user).tr());
+    return Center(
+        child: Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: const Text(LocaleKeys.unauthenticated_user).tr(),
+    ));
   }
 }

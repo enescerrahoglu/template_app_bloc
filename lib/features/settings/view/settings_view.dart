@@ -93,35 +93,35 @@ class _SettingsViewState extends State<SettingsView> with SettingsViewMixin {
                                   )
                                 ],
                               ),
-                              ListSectionWidget(
-                                children: [
-                                  ListTileWidget(
-                                    title: LocaleKeys.theme.tr(),
-                                    leadingIcon: CupertinoIcons.sun_min_fill,
-                                    leadingColor: CupertinoColors.systemBlue,
-                                    onTap: () => _showSelectThemeSheet(context),
-                                  ),
-                                  ListTileWidget(
-                                    title: LocaleKeys.language.tr(),
-                                    leadingIcon: CupertinoIcons.globe,
-                                    leadingColor: CupertinoColors.systemGreen,
-                                    onTap: () => _showSelectLanguageSheet(context),
-                                  ),
-                                ],
-                              ),
-                              ListSectionWidget(
-                                children: [
-                                  ListTileWidget(
-                                    title: LocaleKeys.logout.tr(),
-                                    leadingIcon: CupertinoIcons.square_arrow_left_fill,
-                                    leadingColor: CupertinoColors.systemRed,
-                                    onTap: () => _showLogOutDialog(context, loginBloc),
-                                  ),
-                                ],
-                              ),
                             ],
                           )
                         : const UnauthenticatedUserWidget(),
+                    ListSectionWidget(
+                      children: [
+                        ListTileWidget(
+                          title: LocaleKeys.theme.tr(),
+                          leadingIcon: CupertinoIcons.sun_min_fill,
+                          leadingColor: CupertinoColors.systemBlue,
+                          onTap: () => _showSelectThemeSheet(context),
+                        ),
+                        ListTileWidget(
+                          title: LocaleKeys.language.tr(),
+                          leadingIcon: CupertinoIcons.globe,
+                          leadingColor: CupertinoColors.systemGreen,
+                          onTap: () => _showSelectLanguageSheet(context),
+                        ),
+                      ],
+                    ),
+                    ListSectionWidget(
+                      children: [
+                        ListTileWidget(
+                          title: LocaleKeys.logout.tr(),
+                          leadingIcon: CupertinoIcons.square_arrow_left_fill,
+                          leadingColor: CupertinoColors.systemRed,
+                          onTap: () => _showLogOutDialog(context, loginBloc),
+                        ),
+                      ],
+                    ),
                   ],
                 );
               },

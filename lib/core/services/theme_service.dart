@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:template_app_bloc/core/services/shared_preferences_service.dart';
 import 'package:template_app_bloc/features/theme/bloc/theme_bloc.dart';
 import 'package:template_app_bloc/features/theme/bloc/theme_event.dart';
 import 'package:template_app_bloc/features/theme/bloc/theme_state.dart';
@@ -24,7 +24,7 @@ class ThemeService {
   static void autoChangeTheme(BuildContext context) async {
     ThemeBloc themeBloc = BlocProvider.of<ThemeBloc>(context);
     var brightness = MediaQuery.of(context).platformBrightness;
-    await ThemeService.getTheme();
+    ThemeService.getTheme();
     bool isDarkMode = ThemeService.isDark;
     if (ThemeService.useDeviceTheme) {
       isDarkMode = brightness == Brightness.dark;
@@ -33,15 +33,13 @@ class ThemeService {
   }
 
   static Future<void> setTheme({required bool useDeviceTheme, required bool isDark}) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('useDeviceTheme', useDeviceTheme);
-    await prefs.setBool('isDark', isDark);
+    await SharedPreferencesService.instance.setData(PreferenceKey.useDeviceTheme, useDeviceTheme);
+    await SharedPreferencesService.instance.setData(PreferenceKey.isDark, isDark);
   }
 
-  static Future<void> getTheme() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    useDeviceTheme = prefs.getBool('useDeviceTheme') ?? true;
-    isDark = prefs.getBool('isDark') ?? false;
+  static void getTheme() {
+    useDeviceTheme = SharedPreferencesService.instance.getData(PreferenceKey.useDeviceTheme) ?? true;
+    isDark = SharedPreferencesService.instance.getData(PreferenceKey.isDark) ?? false;
   }
 
   static CupertinoThemeData buildTheme(ThemeState state) {

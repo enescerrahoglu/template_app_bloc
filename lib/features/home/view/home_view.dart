@@ -1,5 +1,4 @@
-import 'package:flutter/cupertino.dart';
-import 'package:template_app_bloc/core/constants/color_constants.dart';
+import 'package:flutter/material.dart';
 import 'package:template_app_bloc/generated/locale_keys.g.dart';
 import 'package:template_app_bloc/common/helpers/ui_helper.dart';
 import 'package:template_app_bloc/common/widgets/custom_scaffold.dart';
@@ -27,9 +26,10 @@ class _HomeViewState extends State<HomeView> {
           width: UIHelper.deviceWidth,
           height: 150,
           decoration: BoxDecoration(
-            color: ColorConstants.lightBackgroundColorActivated,
+            color: Theme.of(context).colorScheme.primaryContainer,
             borderRadius: const BorderRadius.all(Radius.circular(10)),
           ),
+          child: Center(child: Text(index.toString())),
         ),
       ),
     );
